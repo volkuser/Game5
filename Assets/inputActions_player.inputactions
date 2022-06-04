@@ -1,0 +1,34 @@
+{
+    "name": "player_actions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "adb7b01e-1720-41cd-a9e8-46de658f62bf",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "1fbac1e1-6dd3-4e17-aa26-b84842a0af71",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4b984ea0-d038-4e79-8c3f-adbe12610833",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
