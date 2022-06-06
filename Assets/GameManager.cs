@@ -1,6 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class GameManager : MonoBehaviour
     
     public float speed = 0.5f;
     private int Tick = 0;
+
+    public static int Score = 0;
+    public Text scoreText;
     
     public void Start()
     {
@@ -64,5 +69,17 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void AddScore(int count)
+    {
+        Score += count;
+        scoreText.text = "Score: " + Score;
+        // Debug.Log("Score: " + Score);
+    }
+    
+    public void Death()
+    {
+        SceneManager.LoadScene(0);
     }
 }
