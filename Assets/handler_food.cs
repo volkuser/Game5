@@ -9,7 +9,7 @@ public class handler_food : MonoBehaviour
             .GetComponent<GameManager>();
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionStay2D(Collision2D col)
     {
         GameManager.AddScore(10);
         Destroy(gameObject);

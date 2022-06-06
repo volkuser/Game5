@@ -13,4 +13,10 @@ public class controller_enemy : MonoBehaviour
     {
         GameManager.Death();
     }
+    
+    // for triggers
+    /*void Update()
+    {
+        GameManager.Death();   
+    }*/
 }

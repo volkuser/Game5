@@ -81,5 +81,6 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         SceneManager.LoadScene(0);
+        Score = 0;
     }
 }
